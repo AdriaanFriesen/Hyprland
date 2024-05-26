@@ -558,7 +558,7 @@ void CHyprOpenGLImpl::initShaders() {
     m_RenderData.pCurrentMonData->m_shEXT.applyTint         = glGetUniformLocation(prog, "applyTint");
     m_RenderData.pCurrentMonData->m_shEXT.tint              = glGetUniformLocation(prog, "tint");
 
-    prog                                                      = createProgram(TEXVERTSRC, FRAGBLUR1);
+    prog                                                      = createProgram(TEXVERTSRC320, FRAGBLUR1);
     m_RenderData.pCurrentMonData->m_shBLUR1.program           = prog;
     m_RenderData.pCurrentMonData->m_shBLUR1.tex               = glGetUniformLocation(prog, "tex");
     m_RenderData.pCurrentMonData->m_shBLUR1.alpha             = glGetUniformLocation(prog, "alpha");
